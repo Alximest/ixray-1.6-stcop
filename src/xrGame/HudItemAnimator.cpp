@@ -408,6 +408,11 @@ CBurnAnimator::CBurnAnimator(CHudAnimatorManager* m_manager, const shared_str& s
 	Load();
 }
 
+CBurnAnimator::~CBurnAnimator()
+{
+	Particles::Details::Destroy(m_pFlameParticles);
+}
+
 void CBurnAnimator::Load()
 {
 	CHudAnimatorBase::Load();
@@ -485,14 +490,16 @@ void CBurnAnimator::Update()
 		}
 	}
 
-	if (m_pFlameParticles->m_bPlaying)
+	if (m_bIsPlaying && m_pFlameParticles->m_bPlaying)
 	{
 		Fmatrix pos;
 		pos.set(get_ParticlesXFORM());
 		pos.c.set(get_CurrentFirePoint());
 		m_pFlameParticles->UpdateParent(pos, zero_vel);
+		const u32 Time = Device.dwTimeGlobal;
+		m_pFlameParticles->Update(Time - m_pFlameParticles->dwLastTime);
+		m_pFlameParticles->dwLastTime = Time;
 	}
-	UpdateFireDependencies();
 
 	UpdateAnimation();
 }
@@ -507,6 +514,13 @@ void CBurnAnimator::StartFlameParticle()
 
 	m_pFlameParticles->UpdateParent(pos, zero_vel);
 	m_pFlameParticles->Play(true);
+	m_pFlameParticles->dwLastTime = Device.dwTimeGlobal;
+}
+
+void CBurnAnimator::StopAnimator()
+{
+	m_pFlameParticles->Stop(false);
+	CHudAnimatorBase::StopAnimator();
 }
 
 void CBurnAnimator::UpdateFireDependencies_internal()
@@ -536,6 +550,9 @@ void CBurnAnimator::PlayAnimBurn()
 	}
 
 	m_manager->SetCurrentAnimator(this);
+
+	dwFP_Frame = u32(-1);
+	StartFlameParticle();
 
 	if (m_bHideUI)
 	{
