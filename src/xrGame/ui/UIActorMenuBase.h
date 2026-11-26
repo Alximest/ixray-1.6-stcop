@@ -103,6 +103,7 @@ protected:
 	void						PropertiesBoxForTrade		(CUICellItem* cell_item, PIItem item, bool& b_show);
 	void						PropertiesBoxForUpgrade		(PIItem item, bool& b_show);
 	void						PropertiesBoxForRepair		(PIItem item, bool& b_show);
+	void						PropertiesBoxForAbout		(PIItem item, bool& b_show);//Alximest AboutMe
 	bool						CanMoveToPartner			(PIItem pItem);
 	bool						CanSetItemToList			(PIItem item, CUIDragDropListEx* l, u16& ret_slot);
 

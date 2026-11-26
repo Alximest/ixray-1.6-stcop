@@ -57,6 +57,7 @@ void CUIActorMenuBase::ActivatePropertiesBox()
 		PropertiesBoxForPlaying(item, b_show);
 		PropertiesBoxForParse(item, b_show);
 		PropertiesBoxForDrop(cell_item, item, b_show);
+		PropertiesBoxForAbout(item, b_show); //Alximest AboutMe
 	}
 	else if(m_currMenuMode == mmUpgrade) 
 	{
@@ -590,6 +591,12 @@ void CUIActorMenuBase::PropertiesBoxForWeapon(CUICellItem* cell_item, PIItem ite
 		}
 	}
 }
+//Alximest AboutMe
+void CUIActorMenuBase::PropertiesBoxForAbout(PIItem item, bool& b_show)  
+{  
+	m_UIPropertiesBox->AddItem("st_about", nullptr, INVENTORY_ABOUT_ACTION);  
+	b_show = true;  
+}
 
 //Alundaio: Ability to donate item during trade
 void CUIActorMenuBase::PropertiesBoxForDonate(PIItem item, bool& b_show)
@@ -728,6 +735,7 @@ void CUIActorMenuBase::ProcessPropertiesBoxClicked(CUIWindow* w, void* d)
 
 	if (CNVG* oCNVG = smart_cast<CNVG*>(item->cast_inventory_item()))
 	{
+		
 		if (oCNVG->OnVNGPropertiesBoxClicked(m_UIPropertiesBox))
 		{
 			return;
@@ -736,6 +744,7 @@ void CUIActorMenuBase::ProcessPropertiesBoxClicked(CUIWindow* w, void* d)
 
 	switch ( m_UIPropertiesBox->GetClickedItem()->GetTAG() )
 	{
+		
 	case INVENTORY_TO_SLOT_ACTION:	ToSlot( cell_item, true, (u16)m_UIPropertiesBox->GetClickedItem()->GetData() );		break;
 	case INVENTORY_TO_BELT_ACTION:	
 		ToBelt( cell_item, false );		break;
@@ -1091,6 +1100,12 @@ void CUIActorMenuBase::ProcessPropertiesBoxClicked(CUIWindow* w, void* d)
 		}
 	}
 	break;
+	case INVENTORY_ABOUT_ACTION:  //Alximest AboutMe
+	{  
+		
+		Msg("~ About item: %s", item->m_section_id.c_str());  
+		break;  
+	}
 
 	case INVENTORY_TO_QUICK_SLOT_1:
 		ToQuickSlotAt(cell_item, 0);
