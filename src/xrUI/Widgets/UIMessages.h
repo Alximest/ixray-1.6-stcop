@@ -127,8 +127,8 @@ enum EUIMessages
 	INVENTORY_SELL_ITEM,
 	INVENTORY_PARSE_ITEM,
 
-	//Alximest AboutMe  
-	INVENTORY_ABOUT_ACTION, 
+	//Alximest Info 
+	INVENTORY_INFO_ACTION, 
 
 	//CUIAnimationBase
 	EDIT_TEXT_COMMIT,

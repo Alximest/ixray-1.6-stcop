@@ -51,9 +51,6 @@
 	<string id="st_dress_outfit">
 		<text>wear suit</text>
 	</string>
-	<string id="st_about">	<!--Alximest AboutMe-->    
-		<text>about</text>  
-	</string>
 	<string id="st_drop">
 		<text>drop</text>
 	</string>

@@ -57,7 +57,7 @@ void CUIActorMenuBase::ActivatePropertiesBox()
 		PropertiesBoxForPlaying(item, b_show);
 		PropertiesBoxForParse(item, b_show);
 		PropertiesBoxForDrop(cell_item, item, b_show);
-		PropertiesBoxForAbout(item, b_show); //Alximest AboutMe
+		PropertiesBoxForInfo(item, b_show); //Alximest Info
 	}
 	else if(m_currMenuMode == mmUpgrade) 
 	{
