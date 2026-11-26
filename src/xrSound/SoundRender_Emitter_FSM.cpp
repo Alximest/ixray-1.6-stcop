@@ -8,6 +8,14 @@
 
 XRSOUND_API extern float psSoundCull;
 
+// HACK: temporary shot sound diagnostics, remove after the shotgun investigation.
+static bool SndDbgIsShot(CSoundRender_Emitter* E)
+{
+	return E->owner_data && E->owner_data->s_type == st_Shooting;
+}
+
+#define SND_DBG(Event) 	if (SndDbgIsShot(this)) 	{ 		Msg("[SndDbg] %s E=%p %s 2D=%d base=%.3f ai=%.3f play=%.3f smooth=%.6f fade=%.3f occ=%.3f t=%.3f stop=%.3f tgt=%p", Event, this, source()->file_name(), 			b2D, p_source.base_volume, p_source.volume, PlaybackVolume, smooth_volume, fade_volume, occluder_volume, SoundRender->fTimer_Value, fTimeToStop, target); 	}
+
 inline u32 calc_cursor(const float& fTimeStarted, float& fTime, const float& fTimeTotal, const WAVEFORMATEX& wfx)
 {
 	
@@ -71,9 +79,13 @@ void CSoundRender_Emitter::update(float dt)
 			m_current_state					= stPlaying;
 			set_cursor						(0);
 			SoundRender->i_start			(this);
+			SND_DBG("start->playing");
 		}
 		else 
+		{
 			m_current_state					= stSimulating;
+			SND_DBG("start->SIMULATING");
+		}
 		break;
 	case stStartingLoopedDelayed:
 		if (iPaused)						break;
@@ -126,12 +138,14 @@ void CSoundRender_Emitter::update(float dt)
 		if(fTime>=fTimeToStop)
 		{
 			// STOP
+			SND_DBG("playing->end");
 			m_current_state					= stStopped;
 			SoundRender->i_stop				(this);
 		}else{
 			if (!update_culling(dt)) 
 			{
 				// switch to: SIMULATE
+				SND_DBG("playing->SIMULATING");
 				m_current_state				= stSimulating;		// switch state
 				SoundRender->i_stop			(this);
 			}else
@@ -152,6 +166,7 @@ void CSoundRender_Emitter::update(float dt)
 		if (fTime>=fTimeToStop)
 		{
 			// STOP
+			SND_DBG("SIMULATED->end");
 			m_current_state					= stStopped;
 		}else{
 			u32 ptr						= calc_cursor(	fTimeStarted, 
@@ -165,6 +180,7 @@ void CSoundRender_Emitter::update(float dt)
 				// switch to: PLAY
 				m_current_state				= stPlaying;
 				SoundRender->i_start		(this);
+				SND_DBG("simulating->playing");
 			}
 		}
 		break;
@@ -215,7 +231,10 @@ void CSoundRender_Emitter::update(float dt)
 
 	// if deffered stop active and volume==0 -> physically stop sound
 	if (bStopping&&fis_zero(fade_volume)) 
+	{
+		SND_DBG("deferred stop");
 		i_stop();
+	}
 
 	VERIFY2(!!(owner_data) || (!(owner_data)&&(m_current_state==stStopped)),"owner");
 	VERIFY2(owner_data?*(int*)(owner_data->feedback):1,"owner");

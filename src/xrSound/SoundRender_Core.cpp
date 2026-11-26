@@ -370,6 +370,12 @@ void	CSoundRender_Core::play_no_feedback		( ref_sound& S, CObject* O, u32 flags,
 	{
 		S._feedback()->SetPlaybackVolume(*PlaybackVolume);
 	}
+	// HACK: temporary shot sound diagnostics.
+	if (S._p->s_type == st_Shooting)
+	{
+		Msg("[SndDbg] play_no_feedback E=%p %s flags=%u delay=%.3f vol=%.3f play=%.3f emitters=%u thread=%u", S._feedback(), S._handle()->file_name(), flags, delay,
+			vol ? *vol : -1.0f, PlaybackVolume ? *PlaybackVolume : -1.0f, u32(s_emitters.size()), u32(GetCurrentThreadId()));
+	}
 	S._p				= orig;
 }
 

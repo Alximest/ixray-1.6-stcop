@@ -33,6 +33,11 @@ void CSoundRender_Emitter::start(ref_sound* _owner, bool _loop, float delay)
 
 void CSoundRender_Emitter::i_stop()
 {
+	// HACK: temporary shot sound diagnostics.
+	if (owner_data && owner_data->s_type == st_Shooting && m_current_state != stStopped)
+	{
+		Msg("[SndDbg] FORCED stop E=%p %s state=%u", this, source()->file_name(), u32(m_current_state));
+	}
 	bRewind					=	false;
 	if (target)	SoundRender->i_stop		(this);
 	if (owner_data){
@@ -78,6 +83,11 @@ void CSoundRender_Emitter::pause(bool bVal, int id)
 void CSoundRender_Emitter::cancel()
 {
 	// Msg		("- %10s : %3d[%1.4f] : %s","cancel",dbg_ID,priority(),source->fname);
+	// HACK: temporary shot sound diagnostics.
+	if (owner_data && owner_data->s_type == st_Shooting)
+	{
+		Msg("[SndDbg] CANCEL (target stolen) E=%p %s prio=%.6f", this, source()->file_name(), priority());
+	}
 	switch	(m_current_state) 
 	{
 	case stPlaying:

@@ -1783,6 +1783,9 @@ void CWeaponMagazined::SelectShotSound()
 		}
 	}
 
+	// HACK: temporary shot sound diagnostics.
+	Msg("[SndDbg] OnShot %s alias=%s found=%d hud=%d frame=%u", cName().c_str(), m_sSndShotCurrent.c_str(),
+		m_layered_sounds.FindSoundItem(m_sSndShotCurrent.c_str(), false) != nullptr, GetHUDmode(), Device.dwFrame);
 	m_layered_sounds.PlaySound(m_sSndShotCurrent.c_str(), get_LastFP(), H_Parent(), GetHUDmode(), false, true);
 
 	if (m_eSoundsFlags2.test(ESoundsFlags2::sf_mag_shot))
