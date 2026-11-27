@@ -51,6 +51,9 @@
 	<string id="st_dress_outfit">
 		<text>надеть костюм</text>
 	</string>
+    <string id="st_info">	<!--Alximest Info-->  
+		<text>Описание</text>  
+	</string>
 	<string id="st_drop">
 		<text>выбросить</text>
 	</string>

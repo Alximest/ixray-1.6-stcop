@@ -51,6 +51,9 @@
 	<string id="st_dress_outfit">
 		<text>Za³ó¿ kombinezon</text>
 	</string>
+    <string id="st_info">	<!--Alximest Info-->  
+		<text>Info</text>  
+	</string>
 	<string id="st_drop">
 		<text>Wyrzuæ</text>
 	</string>
