@@ -14,6 +14,7 @@
 #include "../../xrEngine/xr_input.h"
 #include "UIInventoryUpgradeWnd.h"
 #include "UIInvUpgradeInfo.h"
+#include "UIItemInfoWnd.h" //Alximest info
 #include "InventorySorter.h"
 
 #include "ai_space.h"
@@ -451,6 +452,14 @@ void CUIActorMenu::Construct()
 	m_UIPropertiesBox->SetWindowName	( "property_box" );
 
 	m_gamepad_legend					= UIHelper::CreateGamepadLegend(uiXml, "gamepad_legend", this, false);
+
+	//Alximest info
+	m_UIInfoWnd 						= new CUIItemInfoWnd();  
+	m_UIInfoWnd->Init					("item_info_wnd.xml", "info_wnd");  
+	m_UIInfoWnd->SetAutoDelete			(true);  
+	AttachChild							(m_UIInfoWnd);  
+	m_UIInfoWnd->Hide					();
+	m_UIInfoWnd->SetWindowName			("info_wnd");
 
 	InitCallbacks						();
 

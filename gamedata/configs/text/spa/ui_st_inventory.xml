@@ -37,7 +37,7 @@
 		<text>Grupo:</text>
 	</string>
 	<string id="st_condition">
-		<text>Condici˜n</text>
+		<text>Condiciï¿½n</text>
 	</string>
 	<string id="st_detach_gl">
 		<text>quitar lanzagranadas</text>
@@ -51,7 +51,7 @@
 	<string id="st_dress_outfit">
 		<text>poner traje</text>
 	</string>
-    <string id="st_about">	<!--Alximest Info-->  
+    <string id="st_info">	<!--Alximest Info-->  
 		<text>Info</text>  
 	</string>
 	<string id="st_drop">
@@ -67,7 +67,7 @@
 		<text>kg</text>
 	</string>
 	<string id="st_move_on_belt">
-		<text>poner en cintur˜n</text>
+		<text>poner en cinturï¿½n</text>
 	</string>
 	<string id="st_move_to_bag">
 		<text>poner en mochila</text>
@@ -79,7 +79,7 @@
 		<text>Al comerciante no le interesan estos objetos.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>El objeto est˜ demasiado estropeado para venderlo.</text>
+		<text>El objeto estï¿½ demasiado estropeado para venderlo.</text>
 	</string>
 	<string id="st_play">
 		<text>jugar</text>
@@ -91,7 +91,7 @@
 		<text>Estado del blindaje</text>
 	</string>
 	<string id="st_ui_main_sensor">
-		<text>Contaminaci˜n radiactiva</text>
+		<text>Contaminaciï¿½n radiactiva</text>
 	</string>
 	<string id="st_undress_outfit">
 		<text>quitar traje</text>
@@ -109,13 +109,13 @@
 		<text>Tam. carg.</text>
 	</string>
 	<string id="ui_inv_accuracy">
-		<text>Precisi˜n</text>
+		<text>Precisiï¿½n</text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
-		<text>Comprar munici˜n b˜sica para pistola (Q)</text>
+		<text>Comprar municiï¿½n bï¿½sica para pistola (Q)</text>
 	</string>
 	<string id="ui_inv_ammo_rifle">
-		<text>Comprar munici˜n para fusil (W)</text>
+		<text>Comprar municiï¿½n para fusil (W)</text>
 	</string>
 	<string id="ui_inv_bleeding">
 		<text>Cura de heridas</text>
@@ -130,13 +130,13 @@
 		<text>Restricciones de cantidad</text>
 	</string>
 	<string id="ui_inv_damage">
-		<text>Da˜o</text>
+		<text>Daï¿½o</text>
 	</string>
 	<string id="ui_inv_default(F5)">
 		<text>Predeterminado (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
-		<text>Atr˜s</text>
+		<text>Atrï¿½s</text>
 	</string>
 	<string id="ui_inv_granadelauncher_rifle">
 		<text>Comprar lanzagranadas acoplado para fusil (D)</text>
@@ -157,7 +157,7 @@
 		<text>Pesadas</text>
 	</string>
 	<string id="ui_inv_last_buy">
-		<text>Comprar la ˜ltima combinaci˜n comprada</text>
+		<text>Comprar la ï¿½ltima combinaciï¿½n comprada</text>
 	</string>
 	<string id="ui_inv_last_buy(F4)">
 		<text>Anterior (F4)</text>
@@ -178,10 +178,10 @@
 		<text>Peso de carga</text>
 	</string>
 	<string id="ui_inv_outfit_burn_protection">
-		<text>Prot. t˜rm.</text>
+		<text>Prot. tï¿½rm.</text>
 	</string>
 	<string id="ui_inv_outfit_chemical_burn_protection">
-		<text>Prot. qu˜m.</text>
+		<text>Prot. quï¿½m.</text>
 	</string>
 	<string id="ui_inv_outfit_fire_wound_protection">
 		<text>Blindaje</text>
@@ -190,16 +190,16 @@
 		<text>Prot. rad.</text>
 	</string>
 	<string id="ui_inv_outfit_shock_protection">
-		<text>Prot. el˜c.</text>
+		<text>Prot. elï¿½c.</text>
 	</string>
 	<string id="ui_inv_outfit_telepatic_protection">
-		<text>Prot. ps˜q.</text>
+		<text>Prot. psï¿½q.</text>
 	</string>
 	<string id="ui_inv_outfit_wound_protection">
 		<text>In. imp.</text>
 	</string>
 	<string id="ui_inv_power">
-		<text>Recup. energ˜a</text>
+		<text>Recup. energï¿½a</text>
 	</string>
 	<string id="ui_inv_preset1(F1)">
 		<text>Equipo 1 (F1)</text>
@@ -211,10 +211,10 @@
 		<text>Equipo 3 (F3)</text>
 	</string>
 	<string id="ui_inv_radiation">
-		<text>Radiaci˜n</text>
+		<text>Radiaciï¿½n</text>
 	</string>
 	<string id="ui_inv_rank_restr">
-		<text>Restricci˜n de rango</text>
+		<text>Restricciï¿½n de rango</text>
 	</string>
 	<string id="ui_inv_rate_of_fire">
 		<text>Cad. disp.</text>
@@ -229,7 +229,7 @@
 		<text>Elim. hambre</text>
 	</string>
 	<string id="ui_inv_scope_rifle">
-		<text>Comprar mira telesc˜pica para fusil (S)</text>
+		<text>Comprar mira telescï¿½pica para fusil (S)</text>
 	</string>
 	<string id="ui_inv_sell_items(X)">
 		<text>Vender todos los objetos de la mochila (X)</text>
@@ -253,19 +253,19 @@
 		<text>Ya tienes uno</text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
-		<text>Los servicios en l˜nea de S.T.A.L.K.E.R. no est˜n disponibles.</text>
+		<text>Los servicios en lï¿½nea de S.T.A.L.K.E.R. no estï¿½n disponibles.</text>
 	</string>
 	<string id="ui_st_err_sb_master_server_conn_fail">
 		<text>No se puede conectar al servidor principal.</text>
 	</string>
 	<string id="ui_st_outfit_protect">
-		<text>Protecci˜n:</text>
+		<text>Protecciï¿½n:</text>
 	</string>
 	<string id="ui_st_preset_def">
 		<text>Predeterminado</text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>Combinaci˜n comprada guardada como</text>
+		<text>Combinaciï¿½n comprada guardada como</text>
 	</string>
 	<string id="ui_total_weight">
 		<text>Peso total:</text>
@@ -274,28 +274,28 @@
 		<text>bebida</text>
 	</string>
 	<string id="ui_inv_outfit_power_restore">
-		<text>Recuperaci˜n de energ˜a</text>
+		<text>Recuperaciï¿½n de energï¿½a</text>
 	</string>
 	<string id="st_ui_bleeding_sensor">
 		<text>Hemorragia</text>
 	</string>
 	<string id="ui_inv_weight">
-		<text>Peso m˜ximo</text>
+		<text>Peso mï¿½ximo</text>
 	</string>
 	<string id="st_ui_health_sensor">
 		<text>Salud</text>
 	</string>
 	<string id="ui_ammo_types">
-		<text>Munici˜n</text>
+		<text>Municiï¿½n</text>
 	</string>
 	<string id="ui_inv_effect_time">
-		<text>Duraci˜n</text>
+		<text>Duraciï¿½n</text>
 	</string>
 	<string id="ui_inv_seconds_short">
 		<text>seg.</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>Te permite sobrevivir a una emisi˜n</text>
+		<text>Te permite sobrevivir a una emisiï¿½n</text>
 	</string>
 	<string id="st_undress_helmet">
 		<text>llevar casco</text>

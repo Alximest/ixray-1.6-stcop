@@ -5,6 +5,7 @@
 #include "../InventoryOwner.h"
 #include "../../xrUI/UICursor.h"
 #include "UICellItem.h"
+#include "UIItemInfoWnd.h" //Alximest info
 #include "../medkit.h"
 #include "../eatable_item_object.h"
 #include "../WeaponMagazined.h"
@@ -17,12 +18,22 @@
 
 void move_item_from_to(u16 from_id, u16 to_id, u16 what_id);
 
-void CUIActorMenuBase::TryHidePropertiesBox()
-{
-	if (m_UIPropertiesBox->IsShown())
-	{
-		m_UIPropertiesBox->Hide();
-	}
+void CUIActorMenuBase::TryHidePropertiesBox()  
+{  
+	if (m_UIPropertiesBox->IsShown())  
+	{  
+		m_UIPropertiesBox->Hide();  
+	}  
+	if (m_UIInfoWnd->IsShown())   // Alximest info  
+	{  
+		m_UIInfoWnd->Hide();  
+	}  
+}
+
+void CUIActorMenuBase::ShowItemInfoWindow(CUICellItem* cell_item)  //Alximest info
+{  
+	m_UIInfoWnd->InitItem(cell_item);   
+	m_UIInfoWnd->Show();  
 }
 
 void CUIActorMenuBase::ActivatePropertiesBox()
@@ -591,10 +602,10 @@ void CUIActorMenuBase::PropertiesBoxForWeapon(CUICellItem* cell_item, PIItem ite
 		}
 	}
 }
-//Alximest AboutMe
-void CUIActorMenuBase::PropertiesBoxForAbout(PIItem item, bool& b_show)  
+//Alximest info
+void CUIActorMenuBase::PropertiesBoxForInfo(PIItem item, bool& b_show)  
 {  
-	m_UIPropertiesBox->AddItem("st_about", nullptr, INVENTORY_ABOUT_ACTION);  
+	m_UIPropertiesBox->AddItem("st_info", nullptr, INVENTORY_INFO_ACTION);  
 	b_show = true;  
 }
 
@@ -1100,10 +1111,10 @@ void CUIActorMenuBase::ProcessPropertiesBoxClicked(CUIWindow* w, void* d)
 		}
 	}
 	break;
-	case INVENTORY_ABOUT_ACTION:  //Alximest AboutMe
+
+	case INVENTORY_INFO_ACTION:  //Alximest info
 	{  
-		
-		Msg("~ About item: %s", item->m_section_id.c_str());  
+		ShowItemInfoWindow(cell_item);  
 		break;  
 	}
 

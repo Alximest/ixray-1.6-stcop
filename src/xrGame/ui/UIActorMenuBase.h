@@ -18,6 +18,7 @@ class CUIDragDropReferenceList;
 class CUIProgressBar;
 class CUIItemStateDisplay;
 class CUIItemInfo;
+class CUIItemInfoWnd;   // <-- Alximest info 
 class CUITabControl;
 class CUIInventoryUpgradeWnd;
 class UIInvUpgradeInfo;
@@ -103,7 +104,7 @@ protected:
 	void						PropertiesBoxForTrade		(CUICellItem* cell_item, PIItem item, bool& b_show);
 	void						PropertiesBoxForUpgrade		(PIItem item, bool& b_show);
 	void						PropertiesBoxForRepair		(PIItem item, bool& b_show);
-	void						PropertiesBoxForInfo		(PIItem item, bool& b_show);//Alximest Info
+	void						PropertiesBoxForInfo		(PIItem item, bool& b_show); //Alximest Info
 	bool						CanMoveToPartner			(PIItem pItem);
 	bool						CanSetItemToList			(PIItem item, CUIDragDropListEx* l, u16& ret_slot);
 
@@ -357,7 +358,9 @@ protected:
 public:
 	CUIDragDropReferenceList*	m_pQuickSlot = nullptr;
 	EMenuMode					GetMenuMode					() {return m_currMenuMode;}
-	CUIPropertiesBox*			m_UIPropertiesBox = nullptr;
+	CUIPropertiesBox*			m_UIPropertiesBox = nullptr;//
+	CUIItemInfoWnd*				m_UIInfoWnd = nullptr;  //
+	void						ShowItemInfoWindow			(CUICellItem* cell_item);//Alximest info
 			CInventory*			GetInventory				() { return GetInventoryOwner() ? &GetInventoryOwner()->inventory() : nullptr; }
 	virtual CInventoryOwner*	GetInventoryOwner			() { return nullptr; }
 	virtual CInventoryOwner*	GetPartner					() { return nullptr; }
