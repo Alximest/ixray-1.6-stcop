@@ -458,7 +458,7 @@ void CUIActorMenu::Construct()
 	m_UIInfoWnd->Init					("item_info_wnd.xml", "info_wnd");  
 	m_UIInfoWnd->SetAutoDelete			(true);  
 	AttachChild							(m_UIInfoWnd);  
-	m_UIInfoWnd->Hide					();
+	m_UIInfoWnd->Show					(false);				
 	m_UIInfoWnd->SetWindowName			("info_wnd");
 
 	InitCallbacks						();

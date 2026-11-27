@@ -7,8 +7,7 @@
 #include "../../xrEngine/xr_input.h"  
 #include "UICellItem.h"  
 #include "../inventory_item.h"  
-#include "../EngineExternal.h"  
-  
+#include "../../xrCore/EngineExternal.h"
 void CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)  
 {  
 	CUIXml uiXml;  
@@ -52,7 +51,7 @@ void CUIItemInfoWnd::InitItem(CUICellItem* cell_item)
 		return;  
   
 	m_UIName->SetText(pInvItem->NameItem());  
-	m_UIDesc->SetText(pInvItem->ItemDescription());  
+	m_UIDesc->SetText(pInvItem->ItemDescription().c_str());   
   
 	if (m_UIModel)  
 	{  

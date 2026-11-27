@@ -26,14 +26,14 @@ void CUIActorMenuBase::TryHidePropertiesBox()
 	}  
 	if (m_UIInfoWnd->IsShown())   // Alximest info  
 	{  
-		m_UIInfoWnd->Hide();  
+		m_UIInfoWnd->Show(false);  
 	}  
 }
 
 void CUIActorMenuBase::ShowItemInfoWindow(CUICellItem* cell_item)  //Alximest info
 {  
 	m_UIInfoWnd->InitItem(cell_item);   
-	m_UIInfoWnd->Show();  
+	m_UIInfoWnd->Show(true);  
 }
 
 void CUIActorMenuBase::ActivatePropertiesBox()
