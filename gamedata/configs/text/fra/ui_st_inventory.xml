@@ -37,16 +37,16 @@
 		<text>Groupe :</text>
 	</string>
 	<string id="st_condition">
-		<text>ï¿½tat</text>
+		<text>˜tat</text>
 	</string>
 	<string id="st_detach_gl">
-		<text>dï¿½monter le lance-grenades</text>
+		<text>d˜monter le lance-grenades</text>
 	</string>
 	<string id="st_detach_scope">
-		<text>dï¿½monter la lunette</text>
+		<text>d˜monter la lunette</text>
 	</string>
 	<string id="st_detach_silencer">
-		<text>dï¿½monter le silencieux</text>
+		<text>d˜monter le silencieux</text>
 	</string>
 	<string id="st_dress_outfit">
 		<text>mettre la combinaison</text>
@@ -67,19 +67,19 @@
 		<text>kg</text>
 	</string>
 	<string id="st_move_on_belt">
-		<text>fixer ï¿½ la ceinture</text>
+		<text>fixer ˜ la ceinture</text>
 	</string>
 	<string id="st_move_to_bag">
-		<text>dï¿½placer vers le sac ï¿½ dos</text>
+		<text>d˜placer vers le sac ˜ dos</text>
 	</string>
 	<string id="st_move_to_slot">
-		<text>dï¿½placer vers un emplacement</text>
+		<text>d˜placer vers un emplacement</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>Le marchand n'est pas intï¿½ressï¿½ par ce genre d'objets.</text>
+		<text>Le marchand n'est pas int˜ress˜ par ce genre d'objets.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>Cet objet est en trop mauvais ï¿½tat pour pouvoir ï¿½tre vendu.</text>
+		<text>Cet objet est en trop mauvais ˜tat pour pouvoir ˜tre vendu.</text>
 	</string>
 	<string id="st_play">
 		<text>jouer</text>
@@ -88,7 +88,7 @@
 		<text>vendre l'objet</text>
 	</string>
 	<string id="st_ui_armor_static">
-		<text>ï¿½tat de l'armure</text>
+		<text>˜tat de l'armure</text>
 	</string>
 	<string id="st_ui_main_sensor">
 		<text>Irradiation</text>
@@ -97,7 +97,7 @@
 		<text>enlever la combinaison</text>
 	</string>
 	<string id="st_unload_magazine">
-		<text>dï¿½charger</text>
+		<text>d˜charger</text>
 	</string>
 	<string id="st_use">
 		<text>utiliser</text>
@@ -109,7 +109,7 @@
 		<text>Taille du chargeur</text>
 	</string>
 	<string id="ui_inv_accuracy">
-		<text>Prï¿½cision</text>
+		<text>Pr˜cision</text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
 		<text>Acheter des munitions standard pour le pistolet (A)</text>
@@ -127,13 +127,13 @@
 		<text>Achat de l'arme impossible</text>
 	</string>
 	<string id="ui_inv_count_restr">
-		<text>Restrictions de quantitï¿½</text>
+		<text>Restrictions de quantit˜</text>
 	</string>
 	<string id="ui_inv_damage">
-		<text>Dï¿½gï¿½ts</text>
+		<text>D˜g˜ts</text>
 	</string>
 	<string id="ui_inv_default(F5)">
-		<text>Par dï¿½faut (F5)</text>
+		<text>Par d˜faut (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
 		<text>Retour</text>
@@ -151,13 +151,13 @@
 		<text>Maintenant</text>
 	</string>
 	<string id="ui_inv_health">
-		<text>Rï¿½gï¿½n. de la santï¿½</text>
+		<text>R˜g˜n. de la sant˜</text>
 	</string>
 	<string id="ui_inv_heavy_weapons">
 		<text>Lourde</text>
 	</string>
 	<string id="ui_inv_last_buy">
-		<text>Acheter le set prï¿½cï¿½dent</text>
+		<text>Acheter le set pr˜c˜dent</text>
 	</string>
 	<string id="ui_inv_last_buy(F4)">
 		<text>Derniers objets (F4)</text>
@@ -175,7 +175,7 @@
 		<text>OK</text>
 	</string>
 	<string id="ui_inv_outfit_additional_weight">
-		<text>Poids emportï¿½</text>
+		<text>Poids emport˜</text>
 	</string>
 	<string id="ui_inv_outfit_burn_protection">
 		<text>Prot. thermique</text>
@@ -190,7 +190,7 @@
 		<text>Prot. antiradiations</text>
 	</string>
 	<string id="ui_inv_outfit_shock_protection">
-		<text>Prot. ï¿½lectrique</text>
+		<text>Prot. ˜lectrique</text>
 	</string>
 	<string id="ui_inv_outfit_telepatic_protection">
 		<text>Prot. anti-psi</text>
@@ -199,7 +199,7 @@
 		<text>Abs. des impacts</text>
 	</string>
 	<string id="ui_inv_power">
-		<text>Rï¿½cupï¿½ration d'ï¿½nergie</text>
+		<text>R˜cup˜ration d'˜nergie</text>
 	</string>
 	<string id="ui_inv_preset1(F1)">
 		<text>Set 1 (F1)</text>
@@ -232,7 +232,7 @@
 		<text>Acheter une lunette pour le fusil (S)</text>
 	</string>
 	<string id="ui_inv_sell_items(X)">
-		<text>Vendre tous les objets du sac ï¿½ dos (X)</text>
+		<text>Vendre tous les objets du sac ˜ dos (X)</text>
 	</string>
 	<string id="ui_inv_shotguns">
 		<text>Fusils</text>
@@ -244,13 +244,13 @@
 		<text>Acheter un silencieux pour le fusil (F)</text>
 	</string>
 	<string id="ui_inv_sniper_rifles">
-		<text>Prï¿½cision</text>
+		<text>Pr˜cision</text>
 	</string>
 	<string id="ui_inv_time">
 		<text>Heure</text>
 	</string>
 	<string id="ui_inv_you_already_have">
-		<text>Dï¿½jï¿½ possï¿½dï¿½</text>
+		<text>D˜j˜ poss˜d˜</text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
 		<text>Services en ligne de S.T.A.L.K.E.R. inaccessibles.</text>
@@ -262,10 +262,10 @@
 		<text>Protection :</text>
 	</string>
 	<string id="ui_st_preset_def">
-		<text>Par dï¿½faut</text>
+		<text>Par d˜faut</text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>Set achetï¿½ enregistrï¿½ sous</text>
+		<text>Set achet˜ enregistr˜ sous</text>
 	</string>
 	<string id="ui_total_weight">
 		<text>Poids total :</text>
@@ -274,7 +274,7 @@
 		<text>boire</text>
 	</string>
 	<string id="ui_inv_outfit_power_restore">
-		<text>Rï¿½cupï¿½ration d'ï¿½nergie</text>
+		<text>R˜cup˜ration d'˜nergie</text>
 	</string>
 	<string id="st_ui_bleeding_sensor">
 		<text>Saignement</text>
@@ -283,19 +283,19 @@
 		<text>Poids maximal</text>
 	</string>
 	<string id="st_ui_health_sensor">
-		<text>Santï¿½</text>
+		<text>Sant˜</text>
 	</string>
 	<string id="ui_ammo_types">
 		<text>Munitions</text>
 	</string>
 	<string id="ui_inv_effect_time">
-		<text>Durï¿½e</text>
+		<text>Dur˜e</text>
 	</string>
 	<string id="ui_inv_seconds_short">
 		<text>sec.</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>Permet de survivre ï¿½ une ï¿½mission</text>
+		<text>Permet de survivre ˜ une ˜mission</text>
 	</string>
 	<string id="st_undress_helmet">
 		<text>mettre casque</text>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
 	<string id="not_enough_money_actor">
-		<text>Za maпїЅo pieniпїЅdzy</text>
+		<text>Za mao pienidzy</text>
 	</string>
 	<string id="not_enough_money_partner">
-		<text>PostaпїЅ ma za maпїЅo pieniпїЅdzy</text>
+		<text>Posta ma za mao pienidzy</text>
 	</string>
 	<string id="quick_use_str_1">
 		<text>$$ACTION_QUICK_USE_1$$</text>
@@ -22,13 +22,13 @@
 		<text>Aktywuj artefakt</text>
 	</string>
 	<string id="st_attach_gl_to_rifle">
-		<text>ZaпїЅпїЅ granatnik na</text>
+		<text>Za granatnik na</text>
 	</string>
 	<string id="st_attach_scope_to_pistol">
-		<text>ZaпїЅпїЅ celownik na</text>
+		<text>Za celownik na</text>
 	</string>
 	<string id="st_attach_silencer_to_pistol">
-		<text>ZaпїЅпїЅ tпїЅumik na</text>
+		<text>Za tumik na</text>
 	</string>
 	<string id="st_base_cost">
 		<text>Cena</text>
@@ -46,19 +46,19 @@
 		<text>Zdejmij celownik</text>
 	</string>
 	<string id="st_detach_silencer">
-		<text>Zdejmij tпїЅumik</text>
+		<text>Zdejmij tumik</text>
 	</string>
 	<string id="st_dress_outfit">
-		<text>ZaпїЅпїЅ kombinezon</text>
+		<text>Za kombinezon</text>
 	</string>
     <string id="st_info">	<!--Alximest Info-->  
 		<text>Info</text>  
 	</string>
 	<string id="st_drop">
-		<text>WyrzuпїЅ</text>
+		<text>Wyrzu</text>
 	</string>
 	<string id="st_drop_all">
-		<text>WyrzuпїЅ wszystko</text>
+		<text>Wyrzu wszystko</text>
 	</string>
 	<string id="st_eat">
 		<text>Zjedz</text>
@@ -70,19 +70,19 @@
 		<text>Przymocuj do paska</text>
 	</string>
 	<string id="st_move_to_bag">
-		<text>PrzenieпїЅ do plecaka</text>
+		<text>Przenie do plecaka</text>
 	</string>
 	<string id="st_move_to_slot">
-		<text>PrzenieпїЅ do okienka</text>
+		<text>Przenie do okienka</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>Handlarza nie interesujпїЅ takie przedmioty.</text>
+		<text>Handlarza nie interesuj takie przedmioty.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>Nie moпїЅna handlowaпїЅ tak uszkodzonym przedmiotem.</text>
+		<text>Nie mona handlowa tak uszkodzonym przedmiotem.</text>
 	</string>
 	<string id="st_play">
-		<text>OdtwпїЅrz</text>
+		<text>Odtwrz</text>
 	</string>
 	<string id="st_sell_item">
 		<text>Sprzedaj przedmiot</text>
@@ -91,16 +91,16 @@
 		<text>Stan opancerzenia</text>
 	</string>
 	<string id="st_ui_main_sensor">
-		<text>SkaпїЅenie radioaktywne</text>
+		<text>Skaenie radioaktywne</text>
 	</string>
 	<string id="st_undress_outfit">
 		<text>Zdejmij kombinezon</text>
 	</string>
 	<string id="st_unload_magazine">
-		<text>RozпїЅaduj</text>
+		<text>Rozaduj</text>
 	</string>
 	<string id="st_use">
-		<text>UпїЅyj</text>
+		<text>Uyj</text>
 	</string>
 	<string id="st_weight">
 		<text>Waga</text>
@@ -109,13 +109,13 @@
 		<text>Magazynek</text>
 	</string>
 	<string id="ui_inv_accuracy">
-		<text>CelnoпїЅпїЅ</text>
+		<text>Celno</text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
-		<text>Kup podstawowпїЅ amunicjпїЅ do pistoletu (Q)</text>
+		<text>Kup podstawow amunicj do pistoletu (Q)</text>
 	</string>
 	<string id="ui_inv_ammo_rifle">
-		<text>Kup amunicjпїЅ do karabinu (W)</text>
+		<text>Kup amunicj do karabinu (W)</text>
 	</string>
 	<string id="ui_inv_bleeding">
 		<text>Leczenie ran</text>
@@ -124,16 +124,16 @@
 		<text>Anuluj</text>
 	</string>
 	<string id="ui_inv_cant_buy_item">
-		<text>Nie moпїЅna kupiпїЅ broni</text>
+		<text>Nie mona kupi broni</text>
 	</string>
 	<string id="ui_inv_count_restr">
-		<text>Ograniczenia iloпїЅci</text>
+		<text>Ograniczenia iloci</text>
 	</string>
 	<string id="ui_inv_damage">
-		<text>ObraпїЅenia</text>
+		<text>Obraenia</text>
 	</string>
 	<string id="ui_inv_default(F5)">
-		<text>DomyпїЅlne (F5)</text>
+		<text>Domylne (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
 		<text>Wstecz</text>
@@ -145,7 +145,7 @@
 		<text>Kup granaty do granatnika podwieszanego (D)</text>
 	</string>
 	<string id="ui_inv_handling">
-		<text>ObsпїЅuga</text>
+		<text>Obsuga</text>
 	</string>
 	<string id="ui_inv_has">
 		<text>Teraz</text>
@@ -154,7 +154,7 @@
 		<text>Regeneracja zdrowia</text>
 	</string>
 	<string id="ui_inv_heavy_weapons">
-		<text>CiпїЅka</text>
+		<text>Cika</text>
 	</string>
 	<string id="ui_inv_last_buy">
 		<text>Kup ostatnio kupowany zestaw</text>
@@ -163,13 +163,13 @@
 		<text>Poprzednie (F4)</text>
 	</string>
 	<string id="ui_inv_money">
-		<text>PieniпїЅdze</text>
+		<text>Pienidze</text>
 	</string>
 	<string id="ui_inv_need">
 		<text>Wymagane</text>
 	</string>
 	<string id="ui_inv_not_enought_money">
-		<text>Za maпїЅo pieniпїЅdzy</text>
+		<text>Za mao pienidzy</text>
 	</string>
 	<string id="ui_inv_ok">
 		<text>OK</text>
@@ -220,13 +220,13 @@
 		<text>Szybkostrz.</text>
 	</string>
 	<string id="ui_inv_reset_items(C)">
-		<text>WyczyпїЅпїЅ (C)</text>
+		<text>Wyczy (C)</text>
 	</string>
 	<string id="ui_inv_rifles">
 		<text>Szturmowe</text>
 	</string>
 	<string id="ui_inv_satiety">
-		<text>Zaspokoj. gпїЅodu</text>
+		<text>Zaspokoj. godu</text>
 	</string>
 	<string id="ui_inv_scope_rifle">
 		<text>Kup celownik optyczny do karabinu (S)</text>
@@ -238,10 +238,10 @@
 		<text>Strzelby</text>
 	</string>
 	<string id="ui_inv_silencer_pistol">
-		<text>Kup tпїЅumik do pistoletu (A)</text>
+		<text>Kup tumik do pistoletu (A)</text>
 	</string>
 	<string id="ui_inv_silencer_rifle">
-		<text>Kup tпїЅumik do karabinu (F)</text>
+		<text>Kup tumik do karabinu (F)</text>
 	</string>
 	<string id="ui_inv_sniper_rifles">
 		<text>Snajperskie</text>
@@ -250,25 +250,25 @@
 		<text>Czas</text>
 	</string>
 	<string id="ui_inv_you_already_have">
-		<text>JuпїЅ to masz</text>
+		<text>Ju to masz</text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
-		<text>UsпїЅugi online dla gry S.T.A.L.K.E.R. nie sпїЅ dostпїЅpne.</text>
+		<text>Usugi online dla gry S.T.A.L.K.E.R. nie s dostpne.</text>
 	</string>
 	<string id="ui_st_err_sb_master_server_conn_fail">
-		<text>Nie moпїЅna nawiпїЅzaпїЅ poпїЅпїЅczenia z serwerem gпїЅпїЅwnym.</text>
+		<text>Nie mona nawiza poczenia z serwerem gwnym.</text>
 	</string>
 	<string id="ui_st_outfit_protect">
 		<text>Ochrona:</text>
 	</string>
 	<string id="ui_st_preset_def">
-		<text>DomyпїЅlne</text>
+		<text>Domylne</text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>Kupiony zestaw zostaпїЅ zapisany jako</text>
+		<text>Kupiony zestaw zosta zapisany jako</text>
 	</string>
 	<string id="ui_total_weight">
-		<text>пїЅпїЅczna waga:</text>
+		<text>czna waga:</text>
 	</string>
 	<string id="st_drink">
 		<text>Pij</text>
@@ -295,12 +295,12 @@
 		<text>s</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>UmoпїЅliwia przetrwanie emisji</text>
+		<text>Umoliwia przetrwanie emisji</text>
 	</string>
 	<string id="st_undress_helmet">
-		<text>Zdejmij heпїЅm</text>
+		<text>Zdejmij hem</text>
 	</string>
 	<string id="st_dress_helmet">
-		<text>WпїЅпїЅ heпїЅm</text>
+		<text>W hem</text>
 	</string>
 </string_table>

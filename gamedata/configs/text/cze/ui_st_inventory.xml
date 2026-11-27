@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
 	<string id="not_enough_money_actor">
-		<text>Nedostatek penпїЅz</text>
+		<text>Nedostatek penz</text>
 	</string>
 	<string id="not_enough_money_partner">
-		<text>Postava nemпїЅ dost penпїЅz</text>
+		<text>Postava nem dost penz</text>
 	</string>
 	<string id="quick_use_str_1">
 		<text>$$ACTION_QUICK_USE_1$$</text>
@@ -22,13 +22,13 @@
 		<text>aktivovat artefakt</text>
 	</string>
 	<string id="st_attach_gl_to_rifle">
-		<text>pпїЅipojit granпїЅtomet</text>
+		<text>pipojit grantomet</text>
 	</string>
 	<string id="st_attach_scope_to_pistol">
-		<text>pпїЅipojit puпїЅkohled</text>
+		<text>pipojit pukohled</text>
 	</string>
 	<string id="st_attach_silencer_to_pistol">
-		<text>pпїЅipojit tlumiпїЅ</text>
+		<text>pipojit tlumi</text>
 	</string>
 	<string id="st_base_cost">
 		<text>Cena</text>
@@ -40,16 +40,16 @@
 		<text>Stav</text>
 	</string>
 	<string id="st_detach_gl">
-		<text>odpojit granпїЅtomet</text>
+		<text>odpojit grantomet</text>
 	</string>
 	<string id="st_detach_scope">
-		<text>odpojit puпїЅkohled</text>
+		<text>odpojit pukohled</text>
 	</string>
 	<string id="st_detach_silencer">
-		<text>odpojit tlumiпїЅ</text>
+		<text>odpojit tlumi</text>
 	</string>
 	<string id="st_dress_outfit">
-		<text>oblпїЅct</text>
+		<text>oblct</text>
 	</string>
     <string id="st_info">	<!--Alximest Info-->  
 		<text>Info</text>  
@@ -58,34 +58,34 @@
 		<text>zahodit</text>
 	</string>
 	<string id="st_drop_all">
-		<text>zahodit vпїЅe</text>
+		<text>zahodit ve</text>
 	</string>
 	<string id="st_eat">
-		<text>snпїЅst</text>
+		<text>snst</text>
 	</string>
 	<string id="st_kg">
 		<text>kg</text>
 	</string>
 	<string id="st_move_on_belt">
-		<text>pпїЅipojit k opasku</text>
+		<text>pipojit k opasku</text>
 	</string>
 	<string id="st_move_to_bag">
-		<text>pпїЅesunout do batohu</text>
+		<text>pesunout do batohu</text>
 	</string>
 	<string id="st_move_to_slot">
-		<text>pпїЅesunout na pozici</text>
+		<text>pesunout na pozici</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>Tento obchodnпїЅk nemпїЅ o takovпїЅ vпїЅci zпїЅjem.</text>
+		<text>Tento obchodnk nem o takov vci zjem.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>Takhle poпїЅkozenпїЅ pпїЅedmпїЅty se prodat nedajпїЅ.</text>
+		<text>Takhle pokozen pedmty se prodat nedaj.</text>
 	</string>
 	<string id="st_play">
-		<text>pпїЅehrпїЅt</text>
+		<text>pehrt</text>
 	</string>
 	<string id="st_sell_item">
-		<text>prodat pпїЅedmпїЅt</text>
+		<text>prodat pedmt</text>
 	</string>
 	<string id="st_ui_armor_static">
 		<text>Stav zbroje</text>
@@ -94,127 +94,127 @@
 		<text>Kontaminace radioaktivitou</text>
 	</string>
 	<string id="st_undress_outfit">
-		<text>sundat kombinпїЅzu</text>
+		<text>sundat kombinzu</text>
 	</string>
 	<string id="st_unload_magazine">
-		<text>vyndat zпїЅsobnпїЅk</text>
+		<text>vyndat zsobnk</text>
 	</string>
 	<string id="st_use">
-		<text>pouпїЅпїЅt</text>
+		<text>pout</text>
 	</string>
 	<string id="st_weight">
 		<text>Hm.</text>
 	</string>
 	<string id="ui_ammo_count">
-		<text>PoпїЅ. nпїЅbojпїЅ</text>
+		<text>Po. nboj</text>
 	</string>
 	<string id="ui_inv_accuracy">
-		<text>PпїЅesnost</text>
+		<text>Pesnost</text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
-		<text>Koupit zпїЅkladnпїЅ munici do pistole (Q)</text>
+		<text>Koupit zkladn munici do pistole (Q)</text>
 	</string>
 	<string id="ui_inv_ammo_rifle">
-		<text>Koupit munici do puпїЅky (W)</text>
+		<text>Koupit munici do puky (W)</text>
 	</string>
 	<string id="ui_inv_bleeding">
-		<text>UzdravovпїЅnпїЅ ran</text>
+		<text>Uzdravovn ran</text>
 	</string>
 	<string id="ui_inv_cancel">
-		<text>ZruпїЅit</text>
+		<text>Zruit</text>
 	</string>
 	<string id="ui_inv_cant_buy_item">
-		<text>ZbraпїЅ nelze koupit</text>
+		<text>Zbra nelze koupit</text>
 	</string>
 	<string id="ui_inv_count_restr">
-		<text>OmezenпїЅ poпїЅtu</text>
+		<text>Omezen potu</text>
 	</string>
 	<string id="ui_inv_damage">
-		<text>PoпїЅkozenпїЅ</text>
+		<text>Pokozen</text>
 	</string>
 	<string id="ui_inv_default(F5)">
-		<text>VпїЅchozпїЅ (F5)</text>
+		<text>Vchoz (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
-		<text>ZpпїЅt</text>
+		<text>Zpt</text>
 	</string>
 	<string id="ui_inv_granadelauncher_rifle">
-		<text>Koupit podvпїЅenпїЅ granпїЅtomet na puпїЅku (D)</text>
+		<text>Koupit podven grantomet na puku (D)</text>
 	</string>
 	<string id="ui_inv_granades_rifle">
-		<text>Koupit granпїЅty do podvпїЅenпїЅho granпїЅtometu (E)</text>
+		<text>Koupit granty do podvenho grantometu (E)</text>
 	</string>
 	<string id="ui_inv_handling">
-		<text>OvlпїЅdпїЅnпїЅ</text>
+		<text>Ovldn</text>
 	</string>
 	<string id="ui_inv_has">
-		<text>NynпїЅ</text>
+		<text>Nyn</text>
 	</string>
 	<string id="ui_inv_health">
-		<text>Obnova zdravпїЅ</text>
+		<text>Obnova zdrav</text>
 	</string>
 	<string id="ui_inv_heavy_weapons">
-		<text>TпїЅkпїЅ</text>
+		<text>Tk</text>
 	</string>
 	<string id="ui_inv_last_buy">
-		<text>Zopakovat poslednпїЅ nпїЅkup</text>
+		<text>Zopakovat posledn nkup</text>
 	</string>
 	<string id="ui_inv_last_buy(F4)">
-		<text>PпїЅedchozпїЅ (F4)</text>
+		<text>Pedchoz (F4)</text>
 	</string>
 	<string id="ui_inv_money">
-		<text>PenпїЅze</text>
+		<text>Penze</text>
 	</string>
 	<string id="ui_inv_need">
-		<text>VyпїЅadovпїЅno</text>
+		<text>Vyadovno</text>
 	</string>
 	<string id="ui_inv_not_enought_money">
-		<text>NemпїЅ dost penпїЅz</text>
+		<text>Nem dost penz</text>
 	</string>
 	<string id="ui_inv_ok">
 		<text>OK</text>
 	</string>
 	<string id="ui_inv_outfit_additional_weight">
-		<text>NesenпїЅ hmotnost</text>
+		<text>Nesen hmotnost</text>
 	</string>
 	<string id="ui_inv_outfit_burn_protection">
-		<text>PпїЅed ohnпїЅm</text>
+		<text>Ped ohnm</text>
 	</string>
 	<string id="ui_inv_outfit_chemical_burn_protection">
-		<text>PпїЅed chemiпїЅ</text>
+		<text>Ped chemi</text>
 	</string>
 	<string id="ui_inv_outfit_fire_wound_protection">
 		<text>Zbroj</text>
 	</string>
 	<string id="ui_inv_outfit_radiation_protection">
-		<text>PпїЅed rad.</text>
+		<text>Ped rad.</text>
 	</string>
 	<string id="ui_inv_outfit_shock_protection">
-		<text>PпїЅed elek.</text>
+		<text>Ped elek.</text>
 	</string>
 	<string id="ui_inv_outfit_telepatic_protection">
-		<text>PпїЅed psi.</text>
+		<text>Ped psi.</text>
 	</string>
 	<string id="ui_inv_outfit_wound_protection">
-		<text>PпїЅed nпїЅrazy</text>
+		<text>Ped nrazy</text>
 	</string>
 	<string id="ui_inv_power">
-		<text>Obnova vпїЅdrпїЅe</text>
+		<text>Obnova vdre</text>
 	</string>
 	<string id="ui_inv_preset1(F1)">
-		<text>VпїЅzbroj 1 (F1)</text>
+		<text>Vzbroj 1 (F1)</text>
 	</string>
 	<string id="ui_inv_preset2(F2)">
-		<text>VпїЅzbroj 2 (F2)</text>
+		<text>Vzbroj 2 (F2)</text>
 	</string>
 	<string id="ui_inv_preset3(F3)">
-		<text>VпїЅzbroj 3 (F3)</text>
+		<text>Vzbroj 3 (F3)</text>
 	</string>
 	<string id="ui_inv_radiation">
 		<text>Radiace</text>
 	</string>
 	<string id="ui_inv_rank_restr">
-		<text>OmezenпїЅ hodnostпїЅ</text>
+		<text>Omezen hodnost</text>
 	</string>
 	<string id="ui_inv_rate_of_fire">
 		<text>Kadence</text>
@@ -223,84 +223,84 @@
 		<text>Vynulovat (C)</text>
 	</string>
 	<string id="ui_inv_rifles">
-		<text>пїЅtoпїЅnпїЅ puпїЅky</text>
+		<text>ton puky</text>
 	</string>
 	<string id="ui_inv_satiety">
-		<text>ZahпїЅnпїЅnпїЅ hladu</text>
+		<text>Zahnn hladu</text>
 	</string>
 	<string id="ui_inv_scope_rifle">
-		<text>Koupit optickпїЅ puпїЅkohled</text>
+		<text>Koupit optick pukohled</text>
 	</string>
 	<string id="ui_inv_sell_items(X)">
-		<text>Prodat vпїЅe z batohu (X)</text>
+		<text>Prodat ve z batohu (X)</text>
 	</string>
 	<string id="ui_inv_shotguns">
-		<text>PuпїЅky</text>
+		<text>Puky</text>
 	</string>
 	<string id="ui_inv_silencer_pistol">
-		<text>Koupit tlumiпїЅ na pistoli (A)</text>
+		<text>Koupit tlumi na pistoli (A)</text>
 	</string>
 	<string id="ui_inv_silencer_rifle">
-		<text>Koupit tlumiпїЅ na puпїЅku (F)</text>
+		<text>Koupit tlumi na puku (F)</text>
 	</string>
 	<string id="ui_inv_sniper_rifles">
-		<text>OdstпїЅelovaпїЅky</text>
+		<text>Odstelovaky</text>
 	</string>
 	<string id="ui_inv_time">
-		<text>пїЅas</text>
+		<text>as</text>
 	</string>
 	<string id="ui_inv_you_already_have">
-		<text>To uпїЅ mпїЅ</text>
+		<text>To u m</text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
-		<text>InternetovпїЅ sluпїЅby hry S.T.A.L.K.E.R. nejsou dostupnпїЅ.</text>
+		<text>Internetov sluby hry S.T.A.L.K.E.R. nejsou dostupn.</text>
 	</string>
 	<string id="ui_st_err_sb_master_server_conn_fail">
-		<text>Nelze se pпїЅipojit k hlavnпїЅmu serveru.</text>
+		<text>Nelze se pipojit k hlavnmu serveru.</text>
 	</string>
 	<string id="ui_st_outfit_protect">
 		<text>Ochrana:</text>
 	</string>
 	<string id="ui_st_preset_def">
-		<text>VпїЅchozпїЅ</text>
+		<text>Vchoz</text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>NakoupenпїЅ vпїЅzbroj uloпїЅena jako</text>
+		<text>Nakoupen vzbroj uloena jako</text>
 	</string>
 	<string id="ui_total_weight">
-		<text>CelkovпїЅ vпїЅha:</text>
+		<text>Celkov vha:</text>
 	</string>
 	<string id="st_drink">
-		<text>vypпїЅt</text>
+		<text>vypt</text>
 	</string>
 	<string id="ui_inv_outfit_power_restore">
-		<text>Obnova vпїЅdrпїЅe</text>
+		<text>Obnova vdre</text>
 	</string>
 	<string id="st_ui_bleeding_sensor">
-		<text>KrvпїЅcenпїЅ</text>
+		<text>Krvcen</text>
 	</string>
 	<string id="ui_inv_weight">
-		<text>MaximпїЅlnпїЅ zпїЅtпїЅ</text>
+		<text>Maximln zt</text>
 	</string>
 	<string id="st_ui_health_sensor">
-		<text>ZdravпїЅ</text>
+		<text>Zdrav</text>
 	</string>
 	<string id="ui_ammo_types">
 		<text>Munice</text>
 	</string>
 	<string id="ui_inv_effect_time">
-		<text>TrvпїЅnпїЅ</text>
+		<text>Trvn</text>
 	</string>
 	<string id="ui_inv_seconds_short">
 		<text>s.</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>UmoпїЅnпїЅ ti pпїЅeпїЅпїЅt emisi</text>
+		<text>Umon ti pet emisi</text>
 	</string>
 	<string id="st_undress_helmet">
-		<text>nasadit pпїЅilbu</text>
+		<text>nasadit pilbu</text>
 	</string>
 	<string id="st_dress_helmet">
-		<text>sundat pпїЅilbu</text>
+		<text>sundat pilbu</text>
 	</string>
 </string_table>

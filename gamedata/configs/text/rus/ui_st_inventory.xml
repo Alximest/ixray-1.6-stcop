@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
 	<string id="not_enough_money_actor">
-		<text>пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text>    </text>
 	</string>
 	<string id="not_enough_money_partner">
-		<text>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text>    </text>
 	</string>
 	<string id="quick_use_str_1">
 		<text>$$ACTION_QUICK_USE_1$$</text>
@@ -19,291 +19,291 @@
 		<text>$$ACTION_QUICK_USE_4$$</text>
 	</string>
 	<string id="st_activate_artefact">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_attach_gl_to_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_attach_scope_to_pistol">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_attach_silencer_to_pistol">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_base_cost">
-		<text>пїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_community">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ:</text>
+		<text>:</text>
 	</string>
 	<string id="st_condition">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_detach_gl">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_detach_scope">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_detach_silencer">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_dress_outfit">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
     <string id="st_info">	<!--Alximest Info-->  
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>  
+		<text></text>  
 	</string>
 	<string id="st_drop">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_drop_all">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_eat">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_kg">
-		<text>пїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_move_on_belt">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_move_to_bag">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_move_to_slot">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</text>
+		<text>    .</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</text>
+		<text>      .</text>
 	</string>
 	<string id="st_play">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_sell_item">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_ui_armor_static">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_ui_main_sensor">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_undress_outfit">
-		<text>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_unload_magazine">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_use">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="st_weight">
-		<text>пїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_ammo_count">
-		<text>пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>. </text>
 	</string>
 	<string id="ui_inv_accuracy">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (Q)</text>
+		<text>     (Q)</text>
 	</string>
 	<string id="ui_inv_ammo_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (W)</text>
+		<text>    (W)</text>
 	</string>
 	<string id="ui_inv_bleeding">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_cancel">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_cant_buy_item">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="ui_inv_count_restr">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="ui_inv_damage">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_default(F5)">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (F5)</text>
+		<text> (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
-		<text>пїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_granadelauncher_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (D)</text>
+		<text>    (D)</text>
 	</string>
 	<string id="ui_inv_granades_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (E)</text>
+		<text>    (E)</text>
 	</string>
 	<string id="ui_inv_handling">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_has">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_health">
-		<text>пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>. </text>
 	</string>
 	<string id="ui_inv_heavy_weapons">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_last_buy">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text>   </text>
 	</string>
 	<string id="ui_inv_last_buy(F4)">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (F4)</text>
+		<text> (F4)</text>
 	</string>
 	<string id="ui_inv_money">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_need">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_not_enought_money">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_ok">
 		<text>OK</text>
 	</string>
 	<string id="ui_inv_outfit_additional_weight">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_outfit_burn_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_chemical_burn_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_fire_wound_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_radiation_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_shock_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_telepatic_protection">
-		<text>пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>-</text>
 	</string>
 	<string id="ui_inv_outfit_wound_protection">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_power">
-		<text>пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ</text>
+		<text>. </text>
 	</string>
 	<string id="ui_inv_preset1(F1)">
-		<text>пїЅпїЅпїЅпїЅпїЅ 1 (F1)</text>
+		<text> 1 (F1)</text>
 	</string>
 	<string id="ui_inv_preset2(F2)">
-		<text>пїЅпїЅпїЅпїЅпїЅ 2 (F2)</text>
+		<text> 2 (F2)</text>
 	</string>
 	<string id="ui_inv_preset3(F3)">
-		<text>пїЅпїЅпїЅпїЅпїЅ 3 (F3)</text>
+		<text> 3 (F3)</text>
 	</string>
 	<string id="ui_inv_radiation">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_rank_restr">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="ui_inv_rate_of_fire">
-		<text>пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_reset_items(C)">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (C)</text>
+		<text> (C)</text>
 	</string>
 	<string id="ui_inv_rifles">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_satiety">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_scope_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (S)</text>
+		<text>     (S)</text>
 	</string>
 	<string id="ui_inv_sell_items(X)">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (X)</text>
+		<text>     (X)</text>
 	</string>
 	<string id="ui_inv_shotguns">
-		<text>пїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_silencer_pistol">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (A)</text>
+		<text>    (A)</text>
 	</string>
 	<string id="ui_inv_silencer_rifle">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (F)</text>
+		<text>    (F)</text>
 	</string>
 	<string id="ui_inv_sniper_rifles">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_time">
-		<text>пїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_you_already_have">
-		<text>пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ S.T.A.L.K.E.R. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</text>
+		<text>- S.T.A.L.K.E.R. .</text>
 	</string>
 	<string id="ui_st_err_sb_master_server_conn_fail">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>   -</text>
 	</string>
 	<string id="ui_st_outfit_protect">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ:</text>
+		<text>:</text>
 	</string>
 	<string id="ui_st_preset_def">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ</text>
+		<text>   </text>
 	</string>
 	<string id="ui_total_weight">
-		<text>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ:</text>
+		<text> :</text>
 	</string>
 	<string id="ui_total_volume">
-		<text>пїЅпїЅпїЅпїЅпїЅ:</text>
+		<text>:</text>
 	</string>
 	<string id="st_drink">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_outfit_power_restore">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_ui_bleeding_sensor">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_weight">
-		<text>пїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ</text>
+		<text>. </text>
 	</string>
 	<string id="st_ui_health_sensor">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_ammo_types">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text></text>
 	</string>
 	<string id="ui_inv_effect_time">
-		<text>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="ui_inv_seconds_short">
-		<text>пїЅпїЅпїЅ.</text>
+		<text>.</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</text>
+		<text>  </text>
 	</string>
 	<string id="st_undress_helmet">
-		<text>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 	<string id="st_dress_helmet">
-		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ</text>
+		<text> </text>
 	</string>
 </string_table>
