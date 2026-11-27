@@ -71,13 +71,41 @@ void CUIItemInfoWnd::InitItem(CUICellItem* cell_item)
   
 bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)  
 {  
-	if (m_UIModel && m_UIModel->CursorOverWindow() && pInput->LeftMouseButtonPressed())  
+
+	if (m_UIModel && m_UIModel->GetVisual())  
 	{  
-		Fvector xyz = m_UIModel->GetXYZ();  
-		Fvector2 delta = GetUICursor().GetCursorPositionDelta();  
-		xyz.x += delta.y / 150.f;  
-		xyz.y += delta.x / 150.f;  
-		m_UIModel->SetXYZ(xyz);  
+		if (mouse_action == WINDOW_LBUTTON_UP && m_UIModel->IsCaptMoving())  
+			m_UIModel->SetCaptMoving(false);  
+  
+		if (m_UIModel->CursorOverWindow() && mouse_action == WINDOW_LBUTTON_DOWN)  
+			m_UIModel->SetCaptMoving(true);  
+  
+		if (m_UIModel->IsCaptMoving() && m_UIModel->CursorOverWindow())  
+		{  
+			Fvector xyz = m_UIModel->GetXYZ();  
+			Fvector2 delta = GetUICursor().GetCursorPositionDelta();  
+			xyz.y += delta.x / 40.f;  
+			m_UIModel->SetXYZ(xyz);  
+			return true;  
+		}  
 	}  
+  
+
+	if (mouse_action == WINDOW_LBUTTON_DOWN && CursorOverWindow())  
+		m_bDragging = true;  
+  
+	if (mouse_action == WINDOW_LBUTTON_UP)  
+		m_bDragging = false;  
+  
+	if (m_bDragging && mouse_action == WINDOW_MOUSE_MOVE)  
+	{  
+		Fvector2 delta = GetUICursor().GetCursorPositionDelta();  
+		Fvector2 pos = GetWndPos();  
+		pos.x += delta.x;  
+		pos.y += delta.y;  
+		SetWndPos(pos);  
+		return true;  
+	}  
+  
 	return inherited::OnMouseAction(x, y, mouse_action);  
 }

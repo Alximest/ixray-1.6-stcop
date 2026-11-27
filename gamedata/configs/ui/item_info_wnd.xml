@@ -1,7 +1,7 @@
 <w>  
-	<info_wnd x="300" y="100" width="400" height="500">  
-		<texture>ui_inGame2_hint_wnd</texture>  
-  
+    <info_wnd x="300" y="100" width="400" height="500">  
+        <texture a="160">ui_inGame2_hint_wnd</texture>  
+    
 		<model x="20" y="20" width="360" height="200"/>  
   
 		<name_static x="20" y="230" width="360" height="30">  
