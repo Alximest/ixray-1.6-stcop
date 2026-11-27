@@ -62,7 +62,10 @@ public:
 
 	virtual bool	IsNecessaryItem	    (const shared_str& item_sect);
 	virtual float Weight() const;
-
+	virtual float GetAmmoWeight() const override   // Alximest info - добавляю возможность общий вес боеприпасов отследить в оружии
+	{  
+		return inherited::GetAmmoWeight() + GetMagazineWeight(m_magazine2);  
+	}
 	//виртуальные функции для проигрывания анимации HUD
 	virtual void	PlayAnimModeSwitch();
 	virtual shared_str SetCurrentReloadAnimation();

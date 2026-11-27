@@ -1,22 +1,21 @@
 <w>  
-    <info_wnd x="300" y="100" width="400" height="500">  
-        <background x="0" y="0" width="400" height="500" stretch="1">  
-            <texture a="160">ui_inGame2_hint_wnd_main_window</texture>  
-        </background> 
-		<model x="100" y="10" width="200" height="200" use_3d="1"/>
+	<info_wnd x="300" y="100" width="400" height="560"  
+		always_top="1" can_drag="0">  
   
-		<name_static x="20" y="230" width="360" height="30">  
-			<text font="letterica18" align="c" r="238" g="155" b="23"/>  
+		<background x="0" y="0" width="400" height="560">  
+			<texture>ui_inGame2_hint_wnd_main_window</texture>  
+		</background>  
+  
+		<model x="20" y="20" width="360" height="240" use_3d="1"/>  
+  
+		<name_static x="20" y="265" width="360" height="20">  
+			<text font="letterica18" color="ui_2" align="c"/>  
 		</name_static>  
   
-		<descr_static x="20" y="270" width="360" height="210">  
-			<text font="letterica16" r="170" g="170" b="170" complex_mode="1"/>  
-		</descr_static>  
-        <static_weight x="20" y="380" width="200" height="20">  
-            <text font="letterica16" color="ui_2" align="l"/>  
-        </static_weight>  
-        <static_condition x="20" y="402" width="200" height="20">  
-            <text font="letterica16" color="ui_2" align="l"/>  
-        </static_condition>
+		<descr_list x="20" y="290" width="360" height="255"  
+			always_show_scroll="0" right_ident="5">  
+			<font font="letterica16" color="ui_2"/>  
+		</descr_list>  
+  
 	</info_wnd>  
 </w>

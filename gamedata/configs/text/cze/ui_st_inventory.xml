@@ -252,6 +252,9 @@
 	<string id="ui_inv_you_already_have">
 		<text>To už máš</text>
 	</string>
+	<string id="st_iw_ammo">  
+		<text>Munice</text>  
+	</string>
 	<string id="ui_st_err_gs_not_available">
 		<text>Internetové služby hry S.T.A.L.K.E.R. nejsou dostupné.</text>
 	</string>

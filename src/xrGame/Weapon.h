@@ -906,8 +906,8 @@ public:
 		bool				infinite_fire();
 	IC	bool				can_be_strapped				() const {return m_can_be_strapped;};
 
-	float GetMagazineWeight(const decltype(m_magazine)& mag) const;
-
+	float GetMagazineWeight(const decltype(m_magazine)& mag) const;  
+	virtual float GetAmmoWeight() const { return GetMagazineWeight(m_magazine); }
 protected:
 	u32						m_ef_main_weapon_type = u32(-1);
 	u32						m_ef_weapon_type = u32(-1);

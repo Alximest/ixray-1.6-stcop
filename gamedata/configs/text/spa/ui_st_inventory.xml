@@ -252,6 +252,9 @@
 	<string id="ui_inv_you_already_have">
 		<text>Ya tienes uno</text>
 	</string>
+	<string id="st_iw_ammo">  
+		<text>Municion</text>  
+	</string>
 	<string id="ui_st_err_gs_not_available">
 		<text>Los servicios en línea de S.T.A.L.K.E.R. no están disponibles.</text>
 	</string>
