@@ -1,8 +1,9 @@
 <w>  
     <info_wnd x="300" y="100" width="400" height="500">  
-        <texture a="160">ui_inGame2_hint_wnd</texture>  
-    
-		<model x="20" y="20" width="360" height="200"/>  
+        <background x="0" y="0" width="400" height="500">  
+            <texture a="160">ui_inGame2_hint_wnd_main_window</texture>
+        </background>  
+		<model x="100" y="30" width="200" height="150"/> 
   
 		<name_static x="20" y="230" width="360" height="30">  
 			<text font="letterica18" align="c" r="238" g="155" b="23"/>  

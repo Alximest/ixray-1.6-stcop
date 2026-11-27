@@ -2,13 +2,21 @@
 #include "UIItemInfoWnd.h"  
 #include "../../xrUI/Widgets/UIStatic.h"  
 #include "../../xrUI/Widgets/UI3dStatic.h"  
+#include "../../xrUI/Widgets/UIFrameWindow.h"  
 #include "../../xrUI/UIXmlInit.h"  
 #include "../../xrUI/UICursor.h"  
 #include "../../xrEngine/xr_input.h"  
+#include "../../xrEngine/Render.h"  
+#include "../../xrCore/EngineExternal.h"  
 #include "UICellItem.h"  
 #include "../inventory_item.h"  
-#include "../../xrCore/EngineExternal.h"
-void CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)  
+#include "../PhysicsShellHolder.h" 
+#include "UIInventoryUtilities.h" 
+
+#define INV_GRID_WIDTH2(SCALE_ICON)  (40.0f * SCALE_ICON)  
+#define INV_GRID_HEIGHT2(SCALE_ICON) (40.0f * SCALE_ICON)
+
+void 	CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)  
 {  
 	CUIXml uiXml;  
 	uiXml.Load(CONFIG_PATH, UI_PATH, xml_name);  
@@ -18,7 +26,16 @@ void CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)
   
 	strcpy_s(str, sizeof(str), start_from);  
 	xml_init.InitWindow(uiXml, str, 0, this);  
-  
+
+		xr_strconcat(str, start_from, ":background");  
+	if (uiXml.NavigateToNode(str))  
+	{  
+		m_UIBackground = new CUIFrameWindow();  
+		m_UIBackground->SetAutoDelete(true);  
+		AttachChild(m_UIBackground);  
+		xml_init.InitFrameWindow(uiXml, str, 0, m_UIBackground);  
+	}
+
 	xr_strconcat(str, start_from, ":model");  
 	if (uiXml.NavigateToNode(str))  
 	{  
@@ -43,36 +60,62 @@ void CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)
   
 void CUIItemInfoWnd::InitItem(CUICellItem* cell_item)  
 {  
-	if (!cell_item || !cell_item->m_pData)  
-		return;  
-  
 	PIItem pInvItem = (PIItem)cell_item->m_pData;  
 	if (!pInvItem)  
 		return;  
   
 	m_UIName->SetText(pInvItem->NameItem());  
-	m_UIDesc->SetText(pInvItem->ItemDescription().c_str());   
+	m_UIDesc->SetText(pInvItem->ItemDescription().c_str());  
   
 	if (m_UIModel)  
 	{  
 		static const bool enable3DIcons = EngineExternal()[EEngineExternalGame::Enable3DIcons];  
 		if (enable3DIcons)  
 		{  
-			m_UIModel->SetVisual(pInvItem->m_3d_static_visual_name);  
+			m_UIModel->SetIconVisual(pInvItem->m_3d_static_visual_name);  
 			m_UIModel->SetScaleFactor(pInvItem->m_3d_static_scale);  
 			m_UIModel->SetIconOffset(pInvItem->IconOffset);  
 			m_UIModel->SetXYZ(pInvItem->m_3d_static_rotate);  
 			m_UIModel->SetBonesVisible(pInvItem->object().Visual()->dcast_PKinematics());  
 		}  
 		else  
+		{  
 			m_UIModel->SetVisual(nullptr);  
-	}  
-}  
+		}  
   
+		// 2D-иконка — в обеих ветках  
+		m_UIModel->SetShader(InventoryUtilities::GetEquipmentIconsShader(pInvItem->IconsTexture.c_str()));  
+  
+		Irect item_grid_rect = pInvItem->GetInvGridRect();  
+		float scaleIcon = pInvItem->ScaleIcon;  
+  
+		Frect texture_rect = {};  
+		texture_rect.lt.set(item_grid_rect.x1 * INV_GRID_WIDTH(scaleIcon),  
+		                    item_grid_rect.y1 * INV_GRID_HEIGHT(scaleIcon));  
+		texture_rect.rb.set(item_grid_rect.x2 * INV_GRID_WIDTH(scaleIcon),  
+		                    item_grid_rect.y2 * INV_GRID_HEIGHT(scaleIcon));  
+		texture_rect.rb.add(texture_rect.lt);  
+  
+		m_UIModel->GetUIStaticItem().SetTextureRect(texture_rect);  
+		m_UIModel->TextureOn();  
+		m_UIModel->SetStretchTexture(true);  
+  
+		Fvector2 v_r = {};  
+		v_r.set(item_grid_rect.x2 * INV_GRID_WIDTH2(scaleIcon) / scaleIcon,  
+		        item_grid_rect.y2 * INV_GRID_HEIGHT2(scaleIcon) / scaleIcon);  
+		v_r.x *= UI().get_current_kx();  
+  
+		m_UIModel->GetUIStaticItem().SetSize(v_r);  
+		m_UIModel->SetWidth(v_r.x);  
+		m_UIModel->SetHeight(v_r.y);  
+	}  
+}
+
+
 bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)  
 {  
-
-	if (m_UIModel && m_UIModel->GetVisual())  
+	// вращение модели  
+	if (m_UIModel)  
 	{  
 		if (mouse_action == WINDOW_LBUTTON_UP && m_UIModel->IsCaptMoving())  
 			m_UIModel->SetCaptMoving(false);  
@@ -90,8 +133,9 @@ bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)
 		}  
 	}  
   
-
-	if (mouse_action == WINDOW_LBUTTON_DOWN && CursorOverWindow())  
+	// перетаскивание окна — только не по модели  
+	if (mouse_action == WINDOW_LBUTTON_DOWN && CursorOverWindow()  
+		&& !(m_UIModel && m_UIModel->CursorOverWindow()))  
 		m_bDragging = true;  
   
 	if (mouse_action == WINDOW_LBUTTON_UP)  
@@ -107,5 +151,5 @@ bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)
 		return true;  
 	}  
   
-	return inherited::OnMouseAction(x, y, mouse_action);  
+	return inherited::OnMouseAction(x, y, mouse_action);   // <-- обязательно в конце  
 }

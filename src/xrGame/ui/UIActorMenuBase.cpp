@@ -4,6 +4,8 @@
 #include "UICellCustomItems.h"
 #include "UICellItem.h"
 
+#include "UIItemInfoWnd.h"
+
 #include "../xrUI/Widgets/UIPropertiesBox.h"
 #include "../trade.h"
 #include "../Inventory.h"
@@ -1822,10 +1824,15 @@ bool CUIActorMenuBase::OnKeyboardAction(int dik, EUIMessages keyboard_action)
 		return true;
 	}	
 
-	if ( is_binded(kQUIT, dik) )
-	{
-		if ( WINDOW_KEY_PRESSED == keyboard_action )
-		{
+	if ( is_binded(kQUIT, dik) )  
+	{  
+		if ( WINDOW_KEY_PRESSED == keyboard_action )  
+		{  
+			if (m_UIInfoWnd && m_UIInfoWnd->IsShown())   //   
+			{                                          //   
+				m_UIInfoWnd->Show(false);              //  
+				return true;                           // Alximest info - сперва описание потом остальное
+			}  
 			g_btnHint->Discard();
 			for (u8 i = 1; i <= LAST_SLOT; ++i)
 			{
