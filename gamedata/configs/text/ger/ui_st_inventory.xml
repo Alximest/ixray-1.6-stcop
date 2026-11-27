@@ -4,7 +4,7 @@
 		<text>Nicht genug Geld</text>
 	</string>
 	<string id="not_enough_money_partner">
-		<text>Der Charakter hat nicht gen˜gend Geld</text>
+		<text>Der Charakter hat nicht genügend Geld</text>
 	</string>
 	<string id="quick_use_str_1">
 		<text>$$ACTION_QUICK_USE_1$$</text>
@@ -28,7 +28,7 @@
 		<text>Zielfernrohr montieren an</text>
 	</string>
 	<string id="st_attach_silencer_to_pistol">
-		<text>Schalld˜mpfer montieren an</text>
+		<text>Schalldämpfer montieren an</text>
 	</string>
 	<string id="st_base_cost">
 		<text>Preis</text>
@@ -46,13 +46,10 @@
 		<text>Zielfernrohr abmontieren</text>
 	</string>
 	<string id="st_detach_silencer">
-		<text>Schalld˜mpfer abmontieren</text>
+		<text>Schalldämpfer abmontieren</text>
 	</string>
 	<string id="st_dress_outfit">
 		<text>Anzug tragen</text>
-	</string>
-    <string id="st_info">	<!--Alximest Info-->  
-		<text>Infos</text>  
 	</string>
 	<string id="st_drop">
 		<text>Fallen lassen</text>
@@ -67,7 +64,7 @@
 		<text>kg</text>
 	</string>
 	<string id="st_move_on_belt">
-		<text>An G˜rtel anbringen</text>
+		<text>An Gürtel anbringen</text>
 	</string>
 	<string id="st_move_to_bag">
 		<text>In den Rucksack</text>
@@ -76,10 +73,10 @@
 		<text>In das Feld</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>Der H˜ndler hat kein Interesse an Gegenst˜nden dieser Art.</text>
+		<text>Der Händler hat kein Interesse an Gegenständen dieser Art.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
-		<text>Dieser Gegenstand ist zu stark besch˜digt, um damit zu handeln.</text>
+		<text>Dieser Gegenstand ist zu stark beschädigt, um damit zu handeln.</text>
 	</string>
 	<string id="st_play">
 		<text>Spielen</text>
@@ -112,7 +109,7 @@
 		<text>Schussgen.</text>
 	</string>
 	<string id="ui_inv_ammo_pistol">
-		<text>Normale Munition f˜r Pistole kaufen (Q)</text>
+		<text>Normale Munition für Pistole kaufen (Q)</text>
 	</string>
 	<string id="ui_inv_ammo_rifle">
 		<text>Gewehrmunition kaufen (W)</text>
@@ -127,7 +124,7 @@
 		<text>Waffe kann nicht gekauft werden</text>
 	</string>
 	<string id="ui_inv_count_restr">
-		<text>Anzahlbeschr˜nkung</text>
+		<text>Anzahlbeschränkung</text>
 	</string>
 	<string id="ui_inv_damage">
 		<text>Schaden</text>
@@ -136,13 +133,13 @@
 		<text>Standard (F5)</text>
 	</string>
 	<string id="ui_inv_exit">
-		<text>Zur˜ck</text>
+		<text>Zurück</text>
 	</string>
 	<string id="ui_inv_granadelauncher_rifle">
-		<text>Unterlaufgranatwerfer f˜r Gewehr kaufen (D)</text>
+		<text>Unterlaufgranatwerfer für Gewehr kaufen (D)</text>
 	</string>
 	<string id="ui_inv_granades_rifle">
-		<text>Granaten f˜r Unterlaufgranatwerfer kaufen (E)</text>
+		<text>Granaten für Unterlaufgranatwerfer kaufen (E)</text>
 	</string>
 	<string id="ui_inv_handling">
 		<text>Handhabung</text>
@@ -166,7 +163,7 @@
 		<text>Geld</text>
 	</string>
 	<string id="ui_inv_need">
-		<text>Ben˜tigt</text>
+		<text>Benötigt</text>
 	</string>
 	<string id="ui_inv_not_enought_money">
 		<text>Nicht genug Geld</text>
@@ -178,7 +175,7 @@
 		<text>Getragenes Gewicht</text>
 	</string>
 	<string id="ui_inv_outfit_burn_protection">
-		<text>W˜rmeschutz</text>
+		<text>Wärmeschutz</text>
 	</string>
 	<string id="ui_inv_outfit_chemical_burn_protection">
 		<text>Chemiesch.</text>
@@ -214,7 +211,7 @@
 		<text>Strahlung</text>
 	</string>
 	<string id="ui_inv_rank_restr">
-		<text>Rangbeschr˜nkung</text>
+		<text>Rangbeschränkung</text>
 	</string>
 	<string id="ui_inv_rate_of_fire">
 		<text>Feuerrate</text>
@@ -229,19 +226,19 @@
 		<text>Hungerminderung</text>
 	</string>
 	<string id="ui_inv_scope_rifle">
-		<text>Optisches Zielfernrohr f˜r Gewehr kaufen (S)</text>
+		<text>Optisches Zielfernrohr für Gewehr kaufen (S)</text>
 	</string>
 	<string id="ui_inv_sell_items(X)">
-		<text>Alle Gegenst˜nde im Rucksack verkaufen (X)</text>
+		<text>Alle Gegenstände im Rucksack verkaufen (X)</text>
 	</string>
 	<string id="ui_inv_shotguns">
 		<text>Gewehre</text>
 	</string>
 	<string id="ui_inv_silencer_pistol">
-		<text>Schalld˜mpfer f˜r Pistole kaufen (A)</text>
+		<text>Schalldämpfer für Pistole kaufen (A)</text>
 	</string>
 	<string id="ui_inv_silencer_rifle">
-		<text>Schalld˜mpfer f˜r Gewehr kaufen (F)</text>
+		<text>Schalldämpfer für Gewehr kaufen (F)</text>
 	</string>
 	<string id="ui_inv_sniper_rifles">
 		<text>Scharfsch.</text>
@@ -253,7 +250,7 @@
 		<text>Sie haben bereits</text>
 	</string>
 	<string id="ui_st_err_gs_not_available">
-		<text>S.T.A.L.K.E.R.-Onlinedienste sind nicht verf˜gbar.</text>
+		<text>S.T.A.L.K.E.R.-Onlinedienste sind nicht verfügbar.</text>
 	</string>
 	<string id="ui_st_err_sb_master_server_conn_fail">
 		<text>Keine Verbindung zum Master-Server.</text>
@@ -295,7 +292,7 @@
 		<text>Sek</text>
 	</string>
 	<string id="ui_inv_survive_surge">
-		<text>Erm˜glicht es, eine Emission zu ˜berleben</text>
+		<text>Ermöglicht es, eine Emission zu überleben</text>
 	</string>
 	<string id="st_undress_helmet">
 		<text>Helm tragen</text>
