@@ -10,13 +10,13 @@
 #include "../../xrCore/EngineExternal.h"  
 #include "UICellItem.h"  
 #include "../inventory_item.h"  
-#include "../PhysicsShellHolder.h" 
-#include "UIInventoryUtilities.h" 
-
+#include "../PhysicsShellHolder.h"  
+#include "UIInventoryUtilities.h"  
+  
 #define INV_GRID_WIDTH2(SCALE_ICON)  (40.0f * SCALE_ICON)  
-#define INV_GRID_HEIGHT2(SCALE_ICON) (40.0f * SCALE_ICON)
-
-void 	CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)  
+#define INV_GRID_HEIGHT2(SCALE_ICON) (40.0f * SCALE_ICON)  
+  
+void CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)  
 {  
 	CUIXml uiXml;  
 	uiXml.Load(CONFIG_PATH, UI_PATH, xml_name);  
@@ -26,16 +26,16 @@ void 	CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)
   
 	strcpy_s(str, sizeof(str), start_from);  
 	xml_init.InitWindow(uiXml, str, 0, this);  
-
-		xr_strconcat(str, start_from, ":background");  
+  
+	xr_strconcat(str, start_from, ":background");  
 	if (uiXml.NavigateToNode(str))  
 	{  
 		m_UIBackground = new CUIFrameWindow();  
 		m_UIBackground->SetAutoDelete(true);  
 		AttachChild(m_UIBackground);  
 		xml_init.InitFrameWindow(uiXml, str, 0, m_UIBackground);  
-	}
-
+	}  
+  
 	xr_strconcat(str, start_from, ":model");  
 	if (uiXml.NavigateToNode(str))  
 	{  
@@ -43,6 +43,12 @@ void 	CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)
 		m_UIModel->SetAutoDelete(true);  
 		xml_init.InitStatic(uiXml, str, 0, m_UIModel);  
 		AttachChild(m_UIModel);  
+  
+		m_use_3d_icon = uiXml.ReadAttribBool(str, 0, "use_3d",  
+			EngineExternal()[EEngineExternalGame::Enable3DIcons]);  
+  
+		m_modelAreaPos = m_UIModel->GetWndPos();  
+		m_modelAreaSize.set(m_UIModel->GetWidth(), m_UIModel->GetHeight());  
 	}  
   
 	xr_strconcat(str, start_from, ":name_static");  
@@ -56,7 +62,16 @@ void 	CUIItemInfoWnd::Init(LPCSTR xml_name, LPCSTR start_from)
 	m_UIDesc->SetAutoDelete(true);  
 	xml_init.InitStatic(uiXml, str, 0, m_UIDesc);  
 	AttachChild(m_UIDesc);  
-}  
+  
+	// свойства: вес и состояние  
+	xr_strconcat(str, start_from, ":static_weight");  
+	if (uiXml.NavigateToNode(str))  
+		m_UIWeight = UIHelper::CreateStatic(uiXml, str, this);  
+  
+	xr_strconcat(str, start_from, ":static_condition");  
+	if (uiXml.NavigateToNode(str))  
+		m_UICondition = UIHelper::CreateStatic(uiXml, str, this);  
+}
   
 void CUIItemInfoWnd::InitItem(CUICellItem* cell_item)  
 {  
@@ -67,54 +82,48 @@ void CUIItemInfoWnd::InitItem(CUICellItem* cell_item)
 	m_UIName->SetText(pInvItem->NameItem());  
 	m_UIDesc->SetText(pInvItem->ItemDescription().c_str());  
   
-	if (m_UIModel)  
+	// свойства — подписи из string table  
+	string128 buf;  
+  
+	if (m_UIWeight)  
 	{  
-		static const bool enable3DIcons = EngineExternal()[EEngineExternalGame::Enable3DIcons];  
-		if (enable3DIcons)  
-		{  
-			m_UIModel->SetIconVisual(pInvItem->m_3d_static_visual_name);  
-			m_UIModel->SetScaleFactor(pInvItem->m_3d_static_scale);  
-			m_UIModel->SetIconOffset(pInvItem->IconOffset);  
-			m_UIModel->SetXYZ(pInvItem->m_3d_static_rotate);  
-			m_UIModel->SetBonesVisible(pInvItem->object().Visual()->dcast_PKinematics());  
-		}  
-		else  
-		{  
-			m_UIModel->SetVisual(nullptr);  
-		}  
+		xr_sprintf(buf, sizeof(buf), "%s: %.2f %s",  
+			StringTable()->translate("st_weight").c_str(),  
+			pInvItem->Weight(),  
+			StringTable()->translate("st_kg").c_str());  
+		m_UIWeight->SetText(buf);  
+	}  
   
-		// 2D-иконка — в обеих ветках  
-		m_UIModel->SetShader(InventoryUtilities::GetEquipmentIconsShader(pInvItem->IconsTexture.c_str()));  
+	if (m_UICondition)  
+	{  
+		xr_sprintf(buf, sizeof(buf), "%s: %d%%",  
+			StringTable()->translate("st_condition").c_str(),  
+			iFloor(pInvItem->GetCondition() * 100.f));  
+		m_UICondition->SetText(buf);  
+	}  
   
-		Irect item_grid_rect = pInvItem->GetInvGridRect();  
-		float scaleIcon = pInvItem->ScaleIcon;  
+	if (!m_UIModel)  
+		return;  
   
-		Frect texture_rect = {};  
-		texture_rect.lt.set(item_grid_rect.x1 * INV_GRID_WIDTH(scaleIcon),  
-		                    item_grid_rect.y1 * INV_GRID_HEIGHT(scaleIcon));  
-		texture_rect.rb.set(item_grid_rect.x2 * INV_GRID_WIDTH(scaleIcon),  
-		                    item_grid_rect.y2 * INV_GRID_HEIGHT(scaleIcon));  
-		texture_rect.rb.add(texture_rect.lt);  
+	// пробуем 3D — копия визуала из ячейки инвентаря  
+	m_UIModel->SetVisual(cell_item->GetVisual());  
   
-		m_UIModel->GetUIStaticItem().SetTextureRect(texture_rect);  
-		m_UIModel->TextureOn();  
-		m_UIModel->SetStretchTexture(true);  
+	if (m_UIModel->GetVisual())  
+	{  
+		m_UIModel->SetScaleFactor(pInvItem->m_3d_static_scale);  
+		m_UIModel->SetIconOffset(pInvItem->IconOffset);  
+		m_UIModel->SetXYZ(pInvItem->m_3d_static_rotate);  
+		m_UIModel->TextureOff();  
   
-		Fvector2 v_r = {};  
-		v_r.set(item_grid_rect.x2 * INV_GRID_WIDTH2(scaleIcon) / scaleIcon,  
-		        item_grid_rect.y2 * INV_GRID_HEIGHT2(scaleIcon) / scaleIcon);  
-		v_r.x *= UI().get_current_kx();  
-  
-		m_UIModel->GetUIStaticItem().SetSize(v_r);  
-		m_UIModel->SetWidth(v_r.x);  
-		m_UIModel->SetHeight(v_r.y);  
+		m_UIModel->SetWndPos(m_modelAreaPos);  
+		m_UIModel->SetWidth(m_modelAreaSize.x);  
+		m_UIModel->SetHeight(m_modelAreaSize.y);  
 	}  
 }
 
-
+  
 bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)  
 {  
-	// вращение модели  
 	if (m_UIModel)  
 	{  
 		if (mouse_action == WINDOW_LBUTTON_UP && m_UIModel->IsCaptMoving())  
@@ -133,7 +142,6 @@ bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)
 		}  
 	}  
   
-	// перетаскивание окна — только не по модели  
 	if (mouse_action == WINDOW_LBUTTON_DOWN && CursorOverWindow()  
 		&& !(m_UIModel && m_UIModel->CursorOverWindow()))  
 		m_bDragging = true;  
@@ -151,5 +159,5 @@ bool CUIItemInfoWnd::OnMouseAction(float x, float y, EUIMessages mouse_action)
 		return true;  
 	}  
   
-	return inherited::OnMouseAction(x, y, mouse_action);   // <-- обязательно в конце  
+	return inherited::OnMouseAction(x, y, mouse_action);  
 }
